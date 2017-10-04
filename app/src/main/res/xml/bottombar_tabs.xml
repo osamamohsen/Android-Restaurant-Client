@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs xmlns:android="http://schemas.android.com/apk/res/android">
+    <tab
+        id="@+id/tab_home"
+        android:state_selected="true"
+        icon="@drawable/home"
+        title="Home"
+        inActiveColor="@color/colorPrimaryNotActive"
+        activeColor="@color/colorPrimary"
+        badgeBackgroundColor="@color/colorPrimaryBackground"/>
+    <tab
+        id="@+id/tab_profile"
+        icon="@drawable/profile"
+        title="Profile"
+        inActiveColor="@color/colorPrimaryNotActive"
+        activeColor="@color/colorPrimary"
+        badgeBackgroundColor="@color/colorPrimaryBackground"/>
+    <tab
+        id="@+id/tab_order"
+        icon="@drawable/order"
+        title="Order"
+        inActiveColor="@color/colorPrimaryNotActive"
+        activeColor="@color/colorPrimary"
+        badgeBackgroundColor="@color/colorPrimaryBackground"/>
+
+</tabs>

@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <declare-styleable name="FloatingActionButton">
+    <!-- Background for the FloatingActionButton -->
+    <attr name="android:background"/>
+    <attr name="backgroundTint" format="color"/>
+    <attr name="backgroundTintMode" format="integer"/>
+    </declare-styleable>
+    
+    <style name="CollapsedAppbar" parent="@android:style/TextAppearance.Medium" >
+
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+    <style name="myDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ExpandedAppbar" parent="@android:style/TextAppearance.Medium" >
+
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+    
+</resources>

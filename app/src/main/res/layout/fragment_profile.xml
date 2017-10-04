@@ -1,0 +1,124 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:clickable="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:clickable="true"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:background="@drawable/relative_layout_background"
+                    android:layout_width="match_parent"
+                    android:gravity="top"
+                    android:layout_gravity="center|top"
+                    android:layout_height="120dp" >
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:text="Restaurant Application"
+                        android:fontFamily="cursive"
+                        android:textSize="40dp"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/img_profile"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    android:layout_marginTop="-30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/profile"
+                    app:civ_border_width="2dp"
+                    android:onClick="onClick"
+                    app:civ_border_color="#FF000000"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edt_name"
+                    android:hint="Update Name"
+                    android:text="Ahmed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:met_hideUnderline="false"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="18sp"
+                    android:inputType="text"
+                    android:textColorHint="@android:color/white"
+                    app:met_baseColor="@android:color/black"
+                    app:met_floatingLabel="highlight"
+                    app:met_maxCharacters="11"
+                    app:met_primaryColor="@android:color/white"
+                    app:met_singleLineEllipsis="true"
+                    />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edt_password"
+                    android:hint="Update Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="18sp"
+                    android:text="1234"
+                    android:ellipsize="start"
+                    android:inputType="textPassword"
+                    android:textColorHint="@android:color/white"
+                    app:met_baseColor="@android:color/black"
+                    app:met_floatingLabel="highlight"
+                    app:met_maxCharacters="11"
+                    app:met_primaryColor="@android:color/white"
+                    app:met_singleLineEllipsis="true"
+                    />
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/btn_update_profile"
+                    android:text="Update Profile"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="20dp"
+                    app:shadowColor="@android:color/black"
+                    app:shadowEnabled="true"
+                    app:shadowHeight="5dp"
+                    android:foregroundGravity="bottom"
+                    app:buttonColor="@color/btnSignUp"
+                    app:cornerRadius="4dp"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
